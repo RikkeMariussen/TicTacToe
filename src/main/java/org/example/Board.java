@@ -17,6 +17,7 @@ public class Board {
         this.width = width;
     }
 
+    //hej skal bare lige commit
     public Geometry3D getGeometry(JavaCSG csg){
 
         geoBoard(csg);
