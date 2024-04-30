@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Vector;
 
 public class Main {
-    public static void main(String[] args) {
+    public static <Board> void main(String[] args) {
        //System.out.println("Hello world!");
 
         /*Intro til SCAD
@@ -54,11 +54,10 @@ public class Main {
         Geometry3D resu = ring.getGeometry(csg);
         csg.view(resu);
 
-        //Board
-Board board = new Board(30,5,20);
+        //Remember to make the holeSize a little bit bigger than the brickSize
+        //Board   - it doesnt work otherwise
+        org.example.Board board = new org.example.Board(30.5,5,10);
         Geometry3D res2 = board.getGeometry(csg);
         csg.view(res2);
-    }
-
-
+   }
 }
