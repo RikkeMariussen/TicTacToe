@@ -54,8 +54,9 @@ public class Main {
         Geometry3D resu = ring.getGeometry(csg);
         csg.view(resu);
 
+        //Remember to make the holeSize a little bit bigger than the brickSize
         //Board   - it doesnt work otherwise
-        org.example.Board board = new org.example.Board(30,30,5,20);
+        org.example.Board board = new org.example.Board(30.5,5,10);
         Geometry3D res2 = board.getGeometry(csg);
         csg.view(res2);
    }
